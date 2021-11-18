@@ -24,7 +24,7 @@ export default class BottomTabNavigator extends Component {
                 iconName = "time";
               }
 
-              // You can return any component that you like here!
+              // Puedes devolver cualquier componente que quieras aquí
               return (
                 <Ionicons
                   name={iconName}
@@ -54,8 +54,8 @@ export default class BottomTabNavigator extends Component {
             }
           }}
         >
-          <Tab.Screen name="Ride" component={RideScreen} />
-          <Tab.Screen name="Ride History" component={RideHistoryScreen} />
+          <Tab.Screen name="Montar" component={RideScreen} />
+          <Tab.Screen name="Historial" component={RideHistoryScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     );
