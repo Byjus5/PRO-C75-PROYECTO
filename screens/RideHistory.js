@@ -149,14 +149,14 @@ export default class RideHistoryScreen extends Component {
             <TextInput
               style={styles.textinput}
               onChangeText={text => this.setState({ searchText: text })}
-              placeholder={"Type here"}
+              placeholder={"Escribir aquí"}
               placeholderTextColor={"#FFFFFF"}
             />
             <TouchableOpacity
               style={styles.scanbutton}
               onPress={() => this.handleSearch(searchText, email)}
             >
-              <Text style={styles.scanbuttonText}>Search</Text>
+              <Text style={styles.scanbuttonText}>Buscar</Text>
             </TouchableOpacity>
           </View>
         </View>
