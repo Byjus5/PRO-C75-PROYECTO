@@ -43,21 +43,21 @@ export default class LoginScreen extends Component {
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <View style={styles.upperContainer}>
           <Image source={appIcon} style={styles.appIcon} />
-          <Text style={styles.title}>e-ride</Text>
-          <Text style={styles.subtitle}>A Eco-Friendly Ride</Text>
+          <Text style={styles.title}>Travesía digital</Text>
+          <Text style={styles.subtitle}>Un viaje eco-friendly</Text>
         </View>
         <View style={styles.lowerContainer}>
           <TextInput
             style={styles.textinput}
             onChangeText={text => this.setState({ email: text })}
-            placeholder={"Enter Email"}
+            placeholder={"Ingresar email"}
             placeholderTextColor={"#FFFFFF"}
             autoFocus
           />
           <TextInput
             style={[styles.textinput, { marginTop: 20 }]}
             onChangeText={text => this.setState({ password: text })}
-            placeholder={"Enter Password"}
+            placeholder={"Ingresar contraseña"}
             placeholderTextColor={"#FFFFFF"}
             secureTextEntry
           />
@@ -65,7 +65,7 @@ export default class LoginScreen extends Component {
             style={[styles.button, { marginTop: 20 }]}
             onPress={() => this.handleLogin(email, password)}
           >
-            <Text style={styles.buttonText}>Login</Text>
+            <Text style={styles.buttonText}>Iniciar sesión</Text>
           </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>
